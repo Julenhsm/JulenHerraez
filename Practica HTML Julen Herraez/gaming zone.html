@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Artículos Gaming</title>
+    <link rel="stylesheet" href="estilo gaming.css">
+    <script>
+        // Alerta de edad
+        window.onload = function() {
+            const esMayor = confirm("¿Eres mayor de edad?");
+            if (!esMayor) {
+                window.location.href = "https://www.google.com";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Encabezado de la tienda -->
+    <header>
+        <h1>Gaming Zone</h1>
+        <nav>
+            <ul>
+                <li><a href="#videojuegos">Videojuegos</a></li>
+                <li><a href="#ratones">Ratones</a></li>
+                <li><a href="#teclados">Teclados</a></li>
+                <li><a href="#mandos">Mandos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de productos -->
+    <section id="productos" class="productos">
+        <h2>Productos Destacados</h2>
+
+        <!-- Videojuegos -->
+        <div id="videojuegos" class="categoria">
+            <h3>Videojuegos</h3>
+            <div class="fila-productos">
+                <div class="producto">
+                    <img src="images/elden_ring.jpg" alt="Elden Ring">
+                    <h4>Elden Ring</h4>
+                    <p>Aclamado RPG de mundo abierto, desarrollado por FromSoftware.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/cyberpunk_2077.jpg" alt="Cyberpunk 2077">
+                    <h4>Cyberpunk 2077</h4>
+                    <p>Juego de rol futurista ambientado en Night City.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/horizon_forbidden_west.jpg" alt="Horizon Forbidden West">
+                    <h4>Horizon Forbidden West</h4>
+                    <p>Juego de aventuras en un mundo postapocalíptico.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/god_of_war.jpg" alt="God of War Ragnarok">
+                    <h4>God of War: Ragnarok</h4>
+                    <p>Épica continuación de la saga de Kratos en la mitología nórdica.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ratones -->
+        <div id="ratones" class="categoria">
+            <h3>Ratones Gaming</h3>
+            <div class="fila-productos">
+                <div class="producto">
+                    <img src="images/corsair_sabre.jpg" alt="Corsair Sabre RGB Pro">
+                    <h4>Corsair Sabre RGB Pro</h4>
+                    <p>Ratón gaming con sensor de 18.000 DPI y RGB.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/logitech_g502.jpg" alt="Logitech G502 Hero">
+                    <h4>Logitech G502 Hero</h4>
+                    <p>Ratón con sensor HERO 25K y peso ajustable.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/razer_deathadder.jpg" alt="Razer DeathAdder V2">
+                    <h4>Razer DeathAdder V2</h4>
+                    <p>Ratón ergonómico con switches ópticos y sensor de 20K DPI.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/newskill_habrok.jpg" alt="Newskill Habrok">
+                    <h4>Newskill Habrok</h4>
+                    <p>Ratón con RGB y sensor óptico de hasta 16,000 DPI.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Teclados -->
+        <div id="teclados" class="categoria">
+            <h3>Teclados Gaming</h3>
+            <div class="fila-productos">
+                <div class="producto">
+                    <img src="images/corsair_k70.jpg" alt="Corsair K70 RGB MK.2">
+                    <h4>Corsair K70 RGB MK.2</h4>
+                    <p>Teclado mecánico con switches Cherry MX y RGB.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/logitech_g915.jpg" alt="Logitech G915 TKL">
+                    <h4>Logitech G915 TKL</h4>
+                    <p>Teclado inalámbrico mecánico con iluminación RGB Lightsync.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/razer_blackwidow.jpg" alt="Razer BlackWidow V3">
+                    <h4>Razer BlackWidow V3</h4>
+                    <p>Teclado mecánico con switches Razer y RGB Chroma.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/newskill_serike.jpg" alt="Newskill Serike RGB">
+                    <h4>Newskill Serike RGB</h4>
+                    <p>Teclado mecánico compacto con switches rojos y RGB.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mandos -->
+        <div id="mandos" class="categoria">
+            <h3>Mandos Gaming</h3>
+            <div class="fila-productos">
+                <div class="producto">
+                    <img src="images/razer_raiju.jpg" alt="Razer Raiju Ultimate">
+                    <h4>Razer Raiju Ultimate</h4>
+                    <p>Mando inalámbrico personalizable para PS4 y PC con RGB.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/corsair_scuf.jpg" alt="SCUF Impact">
+                    <h4>SCUF Impact</h4>
+                    <p>Mando personalizable para PS4 y PC, diseñado para eSports.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/logitech_f710.jpg" alt="Logitech F710">
+                    <h4>Logitech F710</h4>
+                    <p>Mando inalámbrico de diseño clásico compatible con PC.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/newskill_arkan.jpg" alt="Newskill Arkan">
+                    <h4>Newskill Arkan</h4>
+                    <p>Mando ergonómico compatible con PC y PS4, con respuesta háptica.</p>
+                    <button onclick="window.location.href='https://www.pccomponentes.com'">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>Para cualquier consulta, contáctanos en <a href="mailto:contacto@gamingzone.com">contacto@gamingzone.com</a></p>
+    </section>
+
+    <!-- Sección acerca de la tienda -->
+    <section id="acerca" class="acerca">
+        <h2>Acerca de Nosotros</h2>
+        <p>Gaming Zone es tu tienda de confianza para todos tus artículos gaming, desde juegos hasta accesorios de alta calidad.</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2023 Gaming Zone. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

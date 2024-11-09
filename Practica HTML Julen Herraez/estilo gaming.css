@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #00ff99;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h2 {
+    color: #00ff99;
+}
+
+/* Sección de productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.producto {
+    background-color: #2a2a3c;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.producto img {
+    width: 100%; /* Hace que la imagen ocupe el ancho del contenedor */
+    max-width: 150px; /* Fija el ancho máximo de la imagen */
+    height: 150px; /* Fija la altura de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que se recorte sin distorsionarse */
+    border-radius: 5px;
+}
+
+.producto h3 {
+    color: #00ff99;
+}
+
+.producto p {
+    color: #cccccc;
+}
+
+.producto button {
+    background-color: #00ff99;
+    color: #1e1e2f;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.producto button:hover {
+    background-color: #00cc7a;
+}
+
+/* Sección de contacto */
+.contacto, .acerca {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contacto a {
+    color: #00ff99;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 1rem;
+    color: #ffffff;
+}
